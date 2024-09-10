@@ -6,50 +6,32 @@
 
   # Use https://search.nixos.org/packages to find packages
   packages = [
-    # pkgs.go
-    # pkgs.python311
+    pkgs.go
+    pkgs.python311
     # pkgs.python311Packages.pip
     # pkgs.nodejs_20
     # pkgs.nodePackages.nodemon
-    # pkgs.openssh-server
-    # pkgs.screen
-    # pkgs.python
-    # pkgs.git
-    # pkgs.git-core
-    # pkgs.openjdk-8-jdk
-    # pkgs.android-tools-adb
-    # pkgs.bc
-    # pkgs.bison
-    # pkgs.build-essential
-    # pkgs.curl
-    # pkgs.flex
-    # pkgs.g++-multilib
-    # pkgs.gcc-multilib
-    # pkgs.gnupg
-    # pkgs.gperf
-    # pkgs.imagemagick
-    # pkgs.lib32ncurses-dev
-    # pkgs.lib32readline-dev
-    # pkgs.lib32z1-dev 
-    # pkgs.liblz4-tool
-    # pkgs.libncurses5-dev
-    # pkgs.libsdl1.2-dev
-    # pkgs.libssl-dev
-    # pkgs.libxml2
-    # pkgs.libxml2-utils
-    # pkgs.lzop pngcrush
-    # pkgs.rsync
-    # pkgs.schedtool
-    # pkgs.squashfs-tools
-    # pkgs.xsltproc
-    # pkgs.yasm
-    # pkgs.zip
-    # pkgs.zlib1g-dev
-    # pkgs.libtinfo5
-    # pkgs.libncurses5
-    # pkgs.neofetch
-    # pkgs.llvm
-    # pkgs.lld
+    pkgs.screen
+    pkgs.git
+    pkgs.openjdk8-bootstrap
+    pkgs.bc
+    pkgs.bison
+    pkgs.curl
+    pkgs.flex
+    pkgs.gnupg
+    pkgs.gperf
+    pkgs.imagemagick
+    pkgs.libxml2
+    pkgs.lzop
+    pkgs.pngcrush
+    pkgs.rsync
+    pkgs.schedtool
+    pkgs.yasm
+    pkgs.zip
+    pkgs.neofetch
+    pkgs.llvm
+    pkgs.lld
+    pkgs.sudo
   ];
 
   # Sets environment variables in the workspace
@@ -57,7 +39,10 @@
   idx = {
     # Search for the extensions you want on https://open-vsx.org/ and use "publisher.id"
     extensions = [
-      # "vscodevim.vim"
+      "vscodevim.vim"
+      "GitHub.vscode-pull-request-github"
+      "ms-python.debugpy"
+      "ms-python.python"
     ];
 
     # Enable previews
